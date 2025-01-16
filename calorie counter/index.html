@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Calorie Counter</h1>
+
+    <div>
+        <label for="dailyGoal">Daily Calorie Goal:</label>
+        <input type="number" id="dailyGoal" placeholder="Set your goal" />
+    </div>
+
+    <div>
+        <h2>Log Your Food</h2>
+        <input type="text" id="foodName" placeholder="Food Name" />
+        <input type="number" id="calories" placeholder="Calories" />
+        <button id="addFood">Add Food</button>
+    </div>
+
+    <div>
+        <h2>Summary</h2>
+        <p>Total Calories Consumed: <span id="totalCalories">0</span></p>
+        <p>Remaining Calories: <span id="remainingCalories">0</span></p>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
